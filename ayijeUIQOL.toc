@@ -1,8 +1,74 @@
-## Interface: 120100
+## Interface: 120105
 ## Title: ayijeUIQOL
 ## Notes: Quality-of-life addon for World of Warcraft Retail.
 ## Author: Axel Husson
 ## Version: 0.1.0
+## Dependencies: AyijeUI
+## OptionalDeps: AyijeUI_CooldownManager, Plumber, TeleportMenu, RetroRuns, BetterWardrobe
+## IconTexture: Interface\AddOns\AyijeUI\Media\Logos\AddonIcon.tga
 ## SavedVariables: ayijeUIQOLDB
+## SavedVariablesPerCharacter: ayijeUIQOLCharacterDB
 
 Core.lua
+Appearance.lua
+MoverSettings.lua
+BuffReminderClicks.lua
+ActionBindings.lua
+GlobalAnchors.lua
+SpellDisplays.lua
+CDMKeybinds.lua
+TokenAppearanceData.lua
+AppearanceCollection.lua
+AppearanceSetSources.lua
+AppearanceRoutes.lua
+BagAppearanceMarkers.lua
+BagUpgradeMarkers.lua
+TokenTooltips.lua
+LootWindow.lua
+EquipmentTracks.lua
+CharacterGear.lua
+CharacterSkins.lua
+PlumberDifficulty.lua
+TeleportMenuSkin.lua
+RetroRunsSkin.lua
+SetBoard.lua
+DelveRatings.lua
+WorldMapLabels.lua
+RareMapPins.lua
+RareMapPins.xml
+MerchantCosts.lua
+MerchantTotals.lua
+ProgressBars.lua
+ProgressNotifications.lua
+MinimapButtonLayout.lua
+DetachedClock.lua
+TrackerBootstrap.lua
+TrackerSavedPanels.lua
+TrackerProviders\PanelPreview.lua
+TrackerProviders\Content.lua
+TrackerProviders\CurrencyCatalog.lua
+TrackerProviders\QuestContent.lua
+TrackerProviders\QuestXP.lua
+TrackerProviders\TrackerContent.lua
+TrackerProviders\DelveQuestContent.lua
+TrackerProviders\DelveContent.lua
+TrackerProviders\ProgressContent.lua
+TrackerProviders\WeeklyContent.lua
+TrackerProviders\RareData.lua
+TrackerProviders\RareContent.lua
+TrackerProviders\RowActions.lua
+TrackerProviders\TeleportData.lua
+TrackerProviders\TeleportContent.lua
+TrackerProviders\TokenAppearances.lua
+TrackerProviders\RaidAppearanceActions.lua
+TrackerProviders\RaidSetContent.lua
+TrackerProviders\RaidAchievementData.lua
+TrackerProviders\RaidAchievementContent.lua
+TrackerProviders\RaidCollection.lua
+LegacyCompletionist.xml
+LegacyCompletionist.lua
+LegacyCompletionistUI.lua
+TrackerSkin.lua
+TrackerStore.lua
+TrackerInteractions.lua
+CustomTrackers.lua

@@ -1,1 +1,5 @@
 *.log
+/TrackerProviders/RareData.lua
+/TrackerProviders/TeleportData.lua
+/TrackerSavedPanels.lua
+/Media/Local/
