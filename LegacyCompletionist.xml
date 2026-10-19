@@ -1,0 +1,4 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <Frame name="ayijeUIQOLCompletionistLineTemplate" inherits="ObjectiveTrackerLineTemplate" virtual="true"/>
+    <Frame name="ayijeUIQOLCompletionistBlockTemplate" inherits="ObjectiveTrackerBlockTemplate" virtual="true"/>
+</Ui>
