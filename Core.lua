@@ -23,6 +23,15 @@ frame:SetScript("OnEvent", function(self, event, name)
     end
     ayijeUIQOLDB = nil
 
+    -- The RetroRuns skin extension was removed. Purge its settings from the active store and saved
+    -- profiles so a profile switch cannot revive them.
+    if type(root.qol) == 'table' then root.qol.retroRunsSkin = nil end
+    for _, profile in pairs(root.profiles or {}) do
+        if type(profile) == 'table' and type(profile.qol) == 'table' then
+            profile.qol.retroRunsSkin = nil
+        end
+    end
+
     local module = UI.DefineModule("QOL", {
         dbKey = "qol",
         label = "Quality of Life",
@@ -67,7 +76,6 @@ frame:SetScript("OnEvent", function(self, event, name)
                 delves = true, delveGrades = true, fontSize = 12 },
             rareMapPins = { enabled = true, showKilled = true, labelMode = 'hover',
                 iconScale = .8, fontSize = 12 },
-            retroRunsSkin = { enabled = true },
             setBoard = {
                 enabled = true, lockouts = true, warbandLockouts = true, tracker = true,
                 openSetsTab = true, panelOpen = true, wishlist = {}, hiddenClasses = {}, collapsed = {},
@@ -127,7 +135,6 @@ frame:SetScript("OnEvent", function(self, event, name)
         ns.CharacterSkins:ApplyConfig()
         ns.PlumberDifficulty:ApplyConfig()
         ns.TeleportMenuSkin:ApplyConfig()
-        ns.RetroRunsSkin:ApplyConfig()
         ns.SetBoard:ApplyConfig()
         ns.WorldMapLabels:ApplyConfig()
         ns.RareMapPins:ApplyConfig()
@@ -153,7 +160,6 @@ frame:SetScript("OnEvent", function(self, event, name)
         ns.CharacterSkins:Enable()
         ns.PlumberDifficulty:Enable()
         ns.TeleportMenuSkin:Enable()
-        ns.RetroRunsSkin:Enable()
         ns.SetBoard:Enable()
         ns.WorldMapLabels:Enable()
         ns.RareMapPins:Enable()
@@ -179,7 +185,6 @@ frame:SetScript("OnEvent", function(self, event, name)
         ns.CharacterSkins:Disable()
         ns.PlumberDifficulty:Disable()
         ns.TeleportMenuSkin:Disable()
-        ns.RetroRunsSkin:Disable()
         ns.SetBoard:Disable()
         ns.WorldMapLabels:Disable()
         ns.RareMapPins:Disable()

@@ -314,16 +314,6 @@ Disabling
 restores the original artwork and fonts. Changes during combat apply after
 combat ends. TeleportMenu is optional.
 
-### RetroRuns skin
-
-RetroRuns windows (main panel, minimized route bar, transmog browser, skips,
-skip details, achievements, load dialog, copy window, and their search popups)
-replace the ornate backdrop with AyijeUI's flat panel fill and registered border.
-RetroRuns' own panel opacity setting still scales the fill. Layout, fonts,
-buttons, and behavior stay managed by RetroRuns, and none of its files are
-modified. Enabled by default; toggle it in `/aui` > Extras > Quality of Life >
-RetroRuns Skin. Disabling restores the original artwork. RetroRuns is optional.
-
 ### World map labels and delve grades
 
 **World Map Labels** in `/aui` > Extras > Quality of Life adds names above native

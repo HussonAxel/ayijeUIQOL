@@ -4,7 +4,7 @@
 ## Author: Axel Husson
 ## Version: 0.1.0
 ## Dependencies: AyijeUI
-## OptionalDeps: AyijeUI_CooldownManager, Plumber, TeleportMenu, RetroRuns, BetterWardrobe
+## OptionalDeps: AyijeUI_CooldownManager, Plumber, TeleportMenu, BetterWardrobe
 ## IconTexture: Interface\AddOns\AyijeUI\Media\Logos\AddonIcon.tga
 ## SavedVariables: ayijeUIQOLDB
 ## SavedVariablesPerCharacter: ayijeUIQOLCharacterDB
@@ -30,7 +30,6 @@ CharacterGear.lua
 CharacterSkins.lua
 PlumberDifficulty.lua
 TeleportMenuSkin.lua
-RetroRunsSkin.lua
 SetBoard.lua
 DelveRatings.lua
 WorldMapLabels.lua
